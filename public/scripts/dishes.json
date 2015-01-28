@@ -1,0 +1,17 @@
+[
+    {
+        "title": "pasta bolognaise",
+        "ingredients": ["pasta", "onions", "minced meat", "passata", "salt", "pepper", "paprika powder", "oregano"],
+        "categories": ["pasta", "meat"]
+    },
+    {
+        "title": "nasi - fried rice",
+        "ingredients": ["spices", "rice", "bell peppers", "carrot", "chicken"],
+        "categories": ["rice", "meat"]
+    },
+    {
+        "title": "veggie burgers",
+        "ingredients": ["veggie burgers", "burger buns", "salad", "tomato", "onion", "hardboiled egg", "ketchup"],
+        "categories": ["veggie", "burger"]
+    }
+]

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Foodplanner</title>
+        <meta name="description" content="backbone practice">
+        <meta name="author" content="Mangamaui">
+
+        <link rel="stylesheet" href="styling/main.css">
+        <link rel="stylesheet" href="styling/vendor/selectize.css">
+    </head>
+
+    <body>
+        <script id="headerTemplate" type="text/template">
+            <div class="wrapper">
+                <h1>Foodplanner</h1>
+            </div>
+        </script>
+
+        <script id="footerTemplate" type="text/template">
+            <div class="wrapper"></div>
+        </script>
+
+        <script id="mainTemplate" type="text/template">
+            <div class="wrapper">
+                <div class="toolbox">
+                    <button id="addDishBtn" class="button">Add</button>
+                    <button id="deleteDishBtn" class="button">Delete</button>
+                    <button id="editDishBtn" class="button">Edit</button>
+                    <button id="saveDishBtn" class="button">Save</button>
+                </div>
+            </div>
+        </script>
+
+        <script id="dishTemplate" type="text/template">
+            <div class="icon">E</div>
+            <h2 class="title"><%= title %></h2>
+            <p class="ingredients"><%= ingredients %></p>
+            <p class="categories"><%= categories %></p>
+        </script>
+
+        <script id="dayTemplate" type="text/template">
+            <h2><%= name %></h2>
+            <p><%= dish %></p>
+        </script>
+
+         <script id="addDishTemplate" type="text/template">
+            <div class="popup">
+                <h2>Add a new dish</h2>
+                <form>
+                    <label for="title">Dish title:</label>
+                    <input type="text" name="title" class="field" />
+                    <label for="ingredients">Ingredients:</label>
+                    <input type="text" name="ingredients" class="field tags" />
+                    <label for="categories">Categories:</label>
+                    <input type="text" name="categories" class="field tags" />
+                    <button class="submit">Submit</button>
+                </form>
+                <button id="closePopup" class="close">x</button>
+            </div>
+        </script>
+
+        <script src="scripts/vendor/jquery.min.js"></script>
+        <script src="scripts/vendor/selectize.js"></script>
+        <script src="scripts/vendor/underscore.js"></script>
+        <script src="scripts/vendor/backbone.js"></script>
+        <script src="scripts/general.js"></script>
+        <script src="scripts/models.js"></script>
+        <script src="scripts/collections.js"></script>
+        <script src="scripts/views.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: green; }
+
+.wrap {
+  font-size: 0;
+  margin: 0 auto;
+  width: 1024px; }
+
+header {
+  margin: 50px 0; }
+
+footer {
+  height: 100px;
+  width: 100%; }
+
+h1 {
+  text-align: center;
+  font-size: 42px; }
+
+h2 {
+  font-size: 30px; }
+
+p {
+  font-size: 16px; }
+
+.toolbox {
+  margin-top: 20px; }
+  .toolbox button#saveDishBtn {
+    background-color: green;
+    border: none;
+    color: white;
+    display: none; }
+
+button {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px; }
+
+.list {
+  border: 1px solid black;
+  border-top: none;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%; }
+  .list:first-child {
+    margin-right: 20%; }
+  .list div.listitem {
+    border-top: 1px solid black;
+    padding: 10px; }
+
+.dish {
+  position: relative; }
+  .dish h2 {
+    margin-bottom: 10px; }
+  .dish p.categories {
+    font-weight: bold;
+    margin-top: 5px; }
+  .dish div.icon {
+    display: none;
+    font-size: 16px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px; }
+    .dish div.icon.show {
+      display: block; }
+  .dish.selected {
+    background-color: green;
+    color: white; }
+
+.popupwrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .popupwrap .popup {
+    background: white;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    top: 100px;
+    width: 50%; }
+    .popupwrap .popup button.close {
+      background-color: red;
+      border: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+      position: absolute;
+      right: -10px;
+      top: 0; }
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+form input {
+  display: block;
+  height: 22px;
+  width: 100%; }
+form button.submit {
+  display: block;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=main.css.map */
